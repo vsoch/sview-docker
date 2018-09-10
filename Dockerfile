@@ -5,7 +5,7 @@ FROM ubuntu:16.04
 FROM centos:7
 
 ARG SLURM_VERSION=17.11.8
-ENV SLURM_DOWNLOAD_URL=https://download.schedmd.com/slurm/slurm-${VERSION}.tar.bz2
+ENV SLURM_DOWNLOAD_URL=https://download.schedmd.com/slurm/slurm-${SLURM_VERSION}.tar.bz2
 ARG GOSU_VERSION=1.10
 
 RUN yum makecache fast \
